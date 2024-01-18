@@ -1,0 +1,178 @@
+.form-control {
+  box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.1);
+  @apply bg-white w-full rounded-lg p-2.5 text-xs text-gray-350
+    font-medium border-gray-180 border placeholder-gray-180;
+
+  &:active,
+  &:focus,
+  &:focus-visible {
+    box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.1);
+    @apply bg-white rounded-lg p-2.5 text-gray-350
+      font-medium border-gray-180 border;
+  }
+}
+
+.date-input {
+  @apply w-48;
+}
+
+.input-tips {
+  @apply absolute text-xs text-gray-180 font-bold not-italic -top-5 right-0;
+}
+
+.form-control-disabled {
+  @apply text-gray-450 bg-gray-100 font-bold border-gray-180 w-full rounded-lg text-sm p-2.5;
+}
+
+.form-control-icon-disabled {
+  @apply pl-9 text-gray-450 bg-gray-100 font-bold border-gray-180 w-full rounded-lg text-sm p-2.5;
+}
+
+.form-control-dropdown {
+  /*  inventory-select */
+  .inventory__input {
+    font-size: 12px !important;
+    font-weight: bold !important;
+    //min-width: 0 !important;
+    @apply text-sm;
+  }
+  .inventory__menu {
+    font-size: 12px !important;
+    @apply text-xs font-bold;
+  }
+  .inventory__placeholder {
+    @apply text-xs text-gray-350 font-medium;
+  }
+  .inventory__multi-value {
+    background: #F8F8F8;
+    @apply rounded-lg;
+  }
+  .inventory__multi-value__label {
+    @apply text-gray-350 font-bold uppercase text-[10px];
+  }
+  .inventory__multi-value__remove svg {
+    fill: #CFD8DC !important;
+  }
+  .inventory__single-value {
+    @apply text-xs text-gray-350 font-medium;
+  }
+  .inventory__indicator svg, .inventory-color__indicator svg {
+    fill: #CFD8DC !important;
+  }
+  //.inventory__clear-indicator {
+  //  @apply hidden;
+  //}
+  .inventory__menu {
+    @apply text-sm text-gray-350;
+  }
+  .inventory__indicator-separator {
+    @apply w-0;
+  }
+  .inventory__control {
+    @apply border-gray-180 border rounded-lg min-h-[45px];
+  }
+  /* inventory color */
+  .inventory-color__input {
+    //min-width: 0 !important;
+    @apply text-sm;
+  }
+  .inventory-color__placeholder {
+    @apply text-xs text-gray-350 font-medium;
+  }
+  .inventory-color__multi-value {
+    @apply rounded-lg;
+  }
+  .inventory-color__multi-value__label {
+    @apply font-bold uppercase relative text-[10px];
+  }
+  .inventory-color__menu {
+    font-size: 12px !important;
+    @apply text-xs font-bold;
+  }
+  .inventory-color__single-value {
+    @apply text-xs text-gray-350 font-medium;
+  }
+  .inventory-color__clear-indicator {
+    //@apply hidden;
+  }
+  .inventory-color__menu {
+    @apply text-sm text-gray-350;
+  }
+  .inventory-color__indicator-separator {
+    @apply w-0;
+  }
+  .inventory-color__control {
+    @apply border-gray-180 border rounded-lg min-h-[40px];
+  }
+}
+
+.form-control-icon {
+  @apply bg-white w-full rounded-lg p-2.5 pl-9 text-sm text-gray-350
+    font-medium border-gray-180 border placeholder-gray-180 pr-[35px];
+
+  &:active,
+  &:focus,
+  &:focus-visible {
+    @apply bg-white w-full rounded-lg p-2.5 pl-9 text-sm text-gray-350 font-medium border-gray-180 border placeholder-gray-180;
+  }
+}
+.form-control-icon::placeholder,  {
+  color: gray !important;
+
+  &:active,
+  &:focus,
+  &:focus-visible {
+    ::placeholder {
+      color: red !important;
+    }
+  }
+}
+.control-label {
+  @apply text-blue-350 text-xs font-bold block mb-2;
+}
+
+.input-close {
+  background-image: url("../../public/images/close.svg");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  @apply absolute top-[12px] right-2;
+}
+
+.input-eye {
+  background-image: url("../../public/images/eye.svg");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  @apply absolute top-2.5 right-2;
+}
+
+.f-icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+  @apply absolute left-2 top-3;
+}
+
+.error-el {
+  @apply flex items-center font-medium tracking-wide text-red-700 text-xs mt-1 ml-1;
+}
+
+.toggle-bg:after {
+  content: '';
+  @apply absolute top-0.5 left-0.5 bg-white border border-gray-300 rounded-full h-5 w-5 transition shadow-sm;
+}
+
+input:checked + .toggle-bg:after {
+  transform: translateX(100%);
+  @apply border-white;
+}
+
+input:checked + .toggle-bg {
+  @apply bg-green-250 border-green-250;
+}
+
+
+
+

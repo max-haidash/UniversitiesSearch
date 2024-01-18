@@ -1,0 +1,86 @@
+.pagination {
+  @apply text-xs font-bold flex text-gray-180 items-center;
+
+  .page-item, .page-item-next, .page-item-prev {
+    @apply mx-0.5;
+
+    .page-link-prev, .page-link-next {
+      background-repeat: no-repeat;
+      width: 6px;
+      height: 10px;
+      @apply block;
+    }
+
+    .page-link {
+      @apply block px-3 py-2;
+    }
+  }
+
+  .page-item.active {
+    @apply text-white bg-gray-350 rounded-lg;
+  }
+
+  .page-item.disabled {
+    a {
+      @apply cursor-not-allowed;
+    }
+  }
+
+  .page-item-next {
+    background-color: #F8F8F8;
+    @apply rounded-r-lg;
+
+    .page-link-next {
+      background-image: url("../../public/images/next-arrow.svg");
+      background-position: center;
+      @apply p-4;
+    }
+  }
+  .page-item-next.disabled {
+    @apply bg-white;
+
+    .page-link-next {
+      background-image: url("../../public/images/next-arrow-d.svg");
+    }
+  }
+
+  .page-item-prev {
+    background-color: #F8F8F8;
+    @apply rounded-l-lg;
+
+    .page-link-prev {
+      background-image: url("../../public/images/prev-arrow.svg");
+      background-position: center;
+      @apply p-4;
+    }
+  }
+
+  .page-item-prev.disabled {
+    @apply bg-white;
+
+    .page-link-prev {
+      background-image: url("../../public/images/prev-arrow-d.svg");
+    }
+  }
+}
+
+.pagination-total {
+  @apply text-xs font-bold flex text-gray-180  items-center;
+}
+
+//curl -i -X POST "https://graph.facebook.com/LATEST-API-VERSION/PAGE-ID/messages
+//?recipient={'id':'2763630843946760'}
+//&messaging_type=RESPONSE
+//&message={'text':'hello,message'}
+//&access_token=EAArS9KI0vagBOZBAKdMFzvyURIfmzV2bL0crZC7T1C62vYLTBXH0i21WuZBHEblVTAyYAWtGaOWiphzebuRUnGqTRutslw4fE32G6XW5XVgRf1O8HKnFIwG6NcNbt9l9ZAo9ZBRK8uRZAclwm5EZCKlmyoqyCwZCGPei9G1sAFTKlBWeLbk1Eg1j77CB9lFsAXJczDcKXU3qwaFOrD4BZAdStfqYZD
+//
+//
+//curl -X POST -H "Content-Type: application/json" -d '{
+//"recipient":{
+//           "id":"2763630843946760"
+//           },
+//"messaging_type": "RESPONSE",
+//"message":{
+//         "text":"Hello, API messages!"
+//         }
+//}' "https://graph.facebook.com/v17.0/121167871079469/messages?access_token=EAArS9KI0vagBOZCAvaNYuej5VbioW05JZByTdRLQgt32ZCTDR0Hw7GuvdPMHdvowZCaPLp4YzfNbKiGhVTZBkBHkfmYy3eDwDxiX15rpifin7yQt9Jqm2ZAFlLRhxoL7cw8ElvJ5VJDRbo2zAwhf9iN19lCwZCin7OPZAhm8mrgBaJEgdjHpGaZCYfwHZCgqiNoa0w6WCQFInbpo071AFJnpAPrRkZD"
