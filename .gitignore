@@ -1,0 +1,8 @@
+/FE/node_modules/
+/FE/.next/
+/FE/.next/.env
+/FE/.env
+/.idea/.gitignore
+/.idea/modules.xml
+/.idea/univercity-search.iml
+/.idea/vcs.xml
