@@ -1,0 +1,129 @@
+.float-table {
+  .float-checkbox {
+    appearance: none;
+    margin: 0;
+    font: inherit;
+    color: #00c868;
+    width: 1.5em;
+    height: 1.5em;
+    border: 0.15em solid #00c868;
+    border-radius: 4px;
+    transform: translateY(-0.075em);
+    margin-left: 4px;
+  }
+
+  .copied-row {
+    @apply bg-gray-100;
+  }
+
+  th {
+    //@apply px-3 py-3 text-xs pr-[55px] font-bold leading-4 tracking-wider text-blue-350 align-top relative;
+    @apply px-3 py-3 text-xs font-bold leading-4 tracking-wider text-blue-350 align-top relative;
+
+    .toggle-bg {
+      width: 20px;
+      height: 12px;
+    }
+    .toggle-bg::after {
+      width: 10px !important;
+      height: 10px !important;
+      top: 1px !important;
+    }
+
+    &:first-child {
+      @apply px-0;
+    }
+    .check-all {
+      width: 13px;
+      height: 13px;
+      border: 0.15em solid #99abce;
+      color: #99abce;
+      border-radius: 4px;
+    }
+  }
+  th.actions {
+    @apply text-right w-[100px] justify-center;
+    max-width: 100px;
+
+    div {
+      justify-content: center;
+      margin-left: 0px;
+      //border: solid 1px;
+    }
+  }
+  td {
+    @apply md:min-w-0 px-3 py-1 text-sm font-bold text-left text-gray-350 align-top;
+
+    .toggle-bg {
+      width: 20px;
+      height: 12px;
+    }
+    .toggle-bg::after {
+      width: 10px !important;
+      height: 10px !important;
+      top: 1px !important;
+      left: -2px !important;
+    }
+
+    &:first-child {
+      @apply px-0;
+    }
+    .form-switch {
+      padding-left: 2.5em;
+    }
+
+    .form-check-input {
+      width: 20px;
+      height: 12px;
+    }
+    .form-check-input:checked {
+      background-size: inherit;
+    }
+
+    .user-photo {
+      @apply w-[24px] h-[24px];
+    }
+  }
+
+  .plan-status {
+    @apply w-full flex justify-center cursor-pointer;
+  }
+
+  .icon-checked {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+  }
+
+  .button_table_action {
+    text-indent: -99999px;
+    white-space: nowrap;
+    background-repeat: no-repeat;
+    @apply mr-1 w-[24px] h-[24px] border-0 bg-transparent inline-block cursor-pointer float-right;
+  }
+  .btn-edit {
+  }
+  .btn-copy {
+  }
+  .btn-delete {
+  }
+}
+
+.table-configuration td {
+  font-size: 16px !important;
+  font-weight: bold !important;
+  color: #4f5b84 !important;
+  //padding-left: 30px !important;
+}
+
+th.chat-eye {
+  .eye {
+    @apply float-right;
+  }
+}
+.translations-msg {
+  width: calc(100% - 60px);
+}
+

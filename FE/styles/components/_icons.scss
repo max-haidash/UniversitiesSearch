@@ -1,0 +1,16 @@
+.f-icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+  @apply absolute left-2 top-3;
+}
+.f-email {
+  background-image: url("../../public/images/input-email.svg");
+}
+.f-password {
+  background-image: url("../../public/images/input-password.svg");
+}
+.f-search {
+  background-image: url("../../public/images/input-search.svg");
+}

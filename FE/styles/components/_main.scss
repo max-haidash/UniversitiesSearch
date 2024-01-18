@@ -1,0 +1,13 @@
+.main-bg {
+  .main-layout {
+    //@apply mx-[20px] lg:max-w-[1400px] md:mt-10 mb-10;
+    @apply py-[20px] px-[20px] md:p-0 lg:p-0 lg:max-w-[1400px] md:mt-10 mb-10;
+  }
+
+  .page-heading {
+    @apply text-[28px] leading-[32px] red-yellow-gradient-text font-bold
+    md:text-[20px] md:leading-[48px] lg:text-[28px] lg:leading-[72px]
+  }
+
+}
+

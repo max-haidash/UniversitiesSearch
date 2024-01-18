@@ -1,0 +1,24 @@
+.gradient-btn {
+  box-shadow: 0 10px 20px rgba(247, 109, 109, 0.2), inset 0px -4px 0px rgba(0, 0, 0, 0.1);
+  @apply basic-btn red-yellow-gradient font-bold text-sm text-white rounded-lg px-4 py-2
+}
+.gradient-btn-small {
+  box-shadow: 0 10px 20px rgba(247, 109, 109, 0.2), inset 0px -4px 0px rgba(0, 0, 0, 0.1);
+  @apply basic-btn red-yellow-gradient font-bold text-sm text-white rounded-lg px-2 py-1.5
+}
+.disabled-btn-small {
+  //box-shadow: 0 15px 10px -15px #9f9797;
+  @apply sm:float-right sm:pt-[4px] basic-btn border border-gray-300 text-gray-600 px-2 py-1.5
+}
+.login-white-btn {
+  min-width: 100px;
+  display: inline-block;
+}
+.disabled-btn {
+  @apply basic-btn border border-gray-300 text-gray-300 py-2
+}
+
+.btn-big {
+  box-shadow: 0 10px 20px rgba(247, 109, 109, 0.2), inset 0px -4px 0px rgba(0, 0, 0, 0.1);
+  @apply red-yellow-gradient text-[16px] text-white py-[12px] md:text-2xl font-bold px-3 md:px-8 rounded-lg whitespace-nowrap;
+}
