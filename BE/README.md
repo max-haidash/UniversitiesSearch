@@ -64,3 +64,10 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+# Several project settings
+* After run migration, user should run php artisan db:seed for generate test user for authentication.
+* Test authentication user credentials is email:john@gmail.com, password:password
+* For cache all universities' data from external API, user should run console command php artisan cache:universities.
+  It needs to be done before testing universities search api
+* Unit tests for search functionality contain in tests/Unit/UniversitySearchTest.php file  
